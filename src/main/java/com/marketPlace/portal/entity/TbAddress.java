@@ -3,15 +3,11 @@ package com.marketPlace.portal.entity;
 import java.io.Serializable;
 
 public class TbAddress implements Serializable {
-    private Long addressId;
-
-    private String tel;
-
-    private String streetName;
-
-    private long Zip;
-
     Boolean isPermanent;
+    private Long addressId;
+    private String tel;
+    private String streetName;
+    private long Zip;
 
     public Long getAddressId() {
         return addressId;
