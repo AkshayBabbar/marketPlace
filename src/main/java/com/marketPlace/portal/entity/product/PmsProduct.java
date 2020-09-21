@@ -1,4 +1,4 @@
-package com.marketPlace.portal.entity;
+package com.marketPlace.portal.entity.product;
 
 import io.swagger.annotations.ApiModelProperty;
 

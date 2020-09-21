@@ -48,4 +48,15 @@ public class TbAddress implements Serializable {
     public void setPermanent(Boolean permanent) {
         isPermanent = permanent;
     }
+
+    @Override
+    public String toString() {
+        return "TbAddress{" +
+                "isPermanent=" + isPermanent +
+                ", addressId=" + addressId +
+                ", tel='" + tel + '\'' +
+                ", streetName='" + streetName + '\'' +
+                ", Zip=" + Zip +
+                '}';
+    }
 }
