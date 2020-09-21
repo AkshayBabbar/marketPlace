@@ -4,7 +4,7 @@ import io.swagger.annotations.ApiModelProperty;
 
 import java.io.Serializable;
 
-public class PmsPorduct implements Serializable {
+public class PmsProduct implements Serializable {
     private Long id;
     private Long brandid;
     private Long productAttributeId;
