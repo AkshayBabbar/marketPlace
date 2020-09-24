@@ -14,6 +14,7 @@
     <modules>
         <module>marketPlace-commons</module>
         <module>marketPlace-portal</module>
+        <module>marketPlace-security</module>
     </modules>
 
 
