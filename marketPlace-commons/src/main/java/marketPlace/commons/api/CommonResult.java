@@ -48,6 +48,10 @@ public class CommonResult<T> {
         return new CommonResult<T>(HttpStatus.FORBIDDEN.value(), HttpStatus.FORBIDDEN.getReasonPhrase(), data);
     }
 
+    public static <T> CommonResult<T> success(T data) {
+        return new CommonResult<T>(HttpStatus.OK.value(), HttpStatus.OK.getReasonPhrase(), data);
+    }
+
     public int getCode() {
         return code;
     }
