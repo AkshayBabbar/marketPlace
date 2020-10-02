@@ -33,6 +33,9 @@ public class UmsMemberController {
                                  @RequestParam String telephone,
                                  @RequestParam String authCode) {
         memberService.register(username, password, telephone, authCode);
-        return CommonResult.success(null, "registration success");
+        return CommonResult.success(null, "registration success ");
+
     }
+
+
 }
