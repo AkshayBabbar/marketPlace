@@ -1,6 +1,7 @@
 package com.marketPlace.portal.controller;
 
 
+import com.marketPlace.commons.api.CommonResult;
 import com.marketPlace.portal.entity.epc.CartProduct;
 import com.marketPlace.portal.entity.epc.CartPromotionItem;
 import com.marketPlace.portal.entity.oms.OmsCartItem;
@@ -8,10 +9,10 @@ import com.marketPlace.portal.service.OmsCartItemService;
 import com.marketPlace.portal.service.UmsMemberService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import marketPlace.commons.api.CommonResult;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -29,12 +30,14 @@ public class OmsCartItemController {
     @ApiOperation("Adding Cart in OMS.")
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     @ResponseBody
-    public CommonResult add(@RequestBody OmsCartItem cartItem) {
+    public ResponseEntity add(@RequestBody OmsCartItem cartItem) {
         int count = cartItemService.add(cartItem);
         if (count > 0) {
-            return CommonResult.success(count);
+            return new ResponseEntity(HttpStatus.OK);
+//            return CommonResult.success(count);
         }
-        return CommonResult.failed();
+        return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+//        return CommonResult.failed();
     }
 
     @ApiOperation("List of items present in cart")

@@ -1,9 +1,9 @@
 package com.marketPlace.portal.controller;
 
+import com.marketPlace.commons.api.CommonResult;
 import com.marketPlace.portal.service.UmsMemberService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiParam;
-import marketPlace.commons.api.CommonResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
