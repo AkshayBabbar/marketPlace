@@ -6,7 +6,7 @@
     <artifactId>marketPlace-commons</artifactId>
     <packaging>jar</packaging>
     <name>marketPlace-commons</name>
-    <description>util for marketplace.</description>
+    <description>util for marketplace</description>
 
 
     <parent>

@@ -1,7 +1,7 @@
 package com.marketPlace.portal.config;
 
-import marketPlace.commons.config.BaseSwaggerConfig;
-import marketPlace.commons.domain.SwaggerProperties;
+import com.marketPlace.commons.config.BaseSwaggerConfig;
+import com.marketPlace.commons.domain.SwaggerProperties;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 

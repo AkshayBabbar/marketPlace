@@ -1,6 +1,6 @@
-package marketPlace.commons.exception;
+package com.marketPlace.commons.exception;
 
-import marketPlace.commons.api.CommonResult;
+import com.marketPlace.commons.api.CommonResult;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;

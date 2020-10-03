@@ -1,4 +1,4 @@
-package marketPlace.commons.exception;
+package com.marketPlace.commons.exception;
 
 public class ApiException extends Exception {
 

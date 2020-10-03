@@ -1,4 +1,4 @@
-package marketPlace.commons.domain;
+package com.marketPlace.commons.domain;
 
 import lombok.Builder;
 import lombok.Data;

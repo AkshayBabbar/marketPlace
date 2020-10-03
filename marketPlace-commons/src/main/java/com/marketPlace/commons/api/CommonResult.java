@@ -1,4 +1,4 @@
-package marketPlace.commons.api;
+package com.marketPlace.commons.api;
 
 import org.springframework.http.HttpStatus;
 
