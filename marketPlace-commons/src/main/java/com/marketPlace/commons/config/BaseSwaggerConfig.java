@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.service.*;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spi.service.contexts.SecurityContext;
 import springfox.documentation.spring.web.plugins.Docket;
@@ -40,7 +41,7 @@ public abstract class BaseSwaggerConfig {
 
     private List<ApiKey> securitySchemes() {
         //Set request header information
-        List<ApiKey> result = new ArrayList<>();
+        List<ApiKey> result = new ArrayList<ApiKey>();
         ApiKey apiKey = new ApiKey("Authorization", "Authorization", "header");
         result.add(apiKey);
         return result;
@@ -48,7 +49,7 @@ public abstract class BaseSwaggerConfig {
 
     private List<SecurityContext> securityContexts() {
         //Set the path that requires login authentication
-        List<SecurityContext> result = new ArrayList<>();
+        List<SecurityContext> result = new ArrayList<SecurityContext>();
         result.add(getContextByPath("/*/.*"));
         return result;
     }
@@ -61,7 +62,7 @@ public abstract class BaseSwaggerConfig {
     }
 
     private List<SecurityReference> defaultAuth() {
-        List<SecurityReference> result = new ArrayList<>();
+        List<SecurityReference> result = new ArrayList<SecurityReference>();
         AuthorizationScope authorizationScope = new AuthorizationScope("global", "accessEverything");
         AuthorizationScope[] authorizationScopes = new AuthorizationScope[1];
         authorizationScopes[0] = authorizationScope;

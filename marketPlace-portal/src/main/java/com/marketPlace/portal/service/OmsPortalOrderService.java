@@ -3,6 +3,7 @@ package com.marketPlace.portal.service;
 import com.marketPlace.commons.domain.CommonPage;
 import com.marketPlace.portal.entity.epc.ConfirmOrderResult;
 import com.marketPlace.portal.entity.oms.OmsOrderDetail;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;

@@ -37,7 +37,7 @@ public class CommonResult<T> {
     }
 
     public static <T> CommonResult<T> validateFailed(String message) {
-        return new CommonResult<>(HttpStatus.NOT_FOUND.value(), message, null);
+        return new CommonResult<T>(HttpStatus.NOT_FOUND.value(), message, null);
     }
 
     public static <T> CommonResult<T> unauthorised(T data) {
