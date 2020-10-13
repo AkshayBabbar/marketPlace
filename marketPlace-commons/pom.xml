@@ -10,8 +10,8 @@
 
 
     <parent>
-        <artifactId>marketPlace</artifactId>
-        <groupId>org.marketPlace</groupId>
+        <artifactId>com.marketPlace</artifactId>
+        <groupId>org.com.marketPlace</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
