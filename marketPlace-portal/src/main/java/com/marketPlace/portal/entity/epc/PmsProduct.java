@@ -19,6 +19,7 @@ public class PmsProduct implements Serializable {
     private Boolean deleteStatus;
     @ApiModelProperty(value = "Shelf status: false->off shelf; true->on shelf")
     private Boolean publishStatus;
+
     @ApiModelProperty(value = "New product status: false->Not new product; true->New product")
     private Boolean newStatus;
     @ApiModelProperty(value = "Recommended status; false->not recommended; true->recommended")
